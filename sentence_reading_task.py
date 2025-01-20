@@ -18,7 +18,7 @@ scanning = 1
 if scanning == 1:
     COM_port = 'COM8'
     baud_rate = 57600
-    trigger_byte_codes = [73, 53] # byte equivalents to the ascii characters 's' and 'S'
+    trigger_byte_codes = [115, 83] # decimal byte equivalents to the ascii characters 's' and 'S'
     port_timeout = 0.01
     
     ports_available = [port.device for port in serial.tools.list_ports.comports()]
